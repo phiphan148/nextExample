@@ -11,6 +11,7 @@ export default async function CommentDetails({postId}: CommentDetailProps ) {
         <div>
             <h3>Comments:</h3>
             {comments.map((comment: any) => (
+                // eslint-disable-next-line react/jsx-key
                 <div>
                     <h4>{comment.email}</h4>
                     <p>{comment.body}</p>
